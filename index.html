@@ -16,6 +16,24 @@
       rel="stylesheet"
     />
 
+    <style>
+      .card-img-top {
+        height: 10vw;
+        object-fit: cover;
+      }
+
+      .img-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 4px;
+      }
+
+      .figure-caption-text {
+        font-size: 0.7rem;
+      }
+    </style>
+
     <title>Vassalboro, Maine</title>
   </head>
 
@@ -24,7 +42,7 @@
       <h6>by Neil</h6>
     </header>
     <div class="container">
-      <div class="card shadow-sm mb-2">
+      <div class="card shadow-sm mb-3">
         <div class="card-body pb-0">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -41,96 +59,70 @@
           <div class="col">
             <div class="card shadow">
               <div class="card-body">
-                <img class="d-flex img-fluid mx-auto rounded mb-2" src="./assets/Vassalboro-sign.jpeg" />
-                <p class="lead fs-6">
+                <figure class="figure text-center d-flex flex-column align-items-center">
+                  <img class="img-fluid mx-auto rounded" src="./assets/Vassalboro-sign.jpeg" />
+                  <figcaption class="figure-caption figure-caption-text">
+                    sign created by Mia Sargent and the VCS art students.
+                  </figcaption>
+                </figure>
+                <div class="card-text">
                   In the far northeast corner of the country, is the state of Maine. Located between Augusta and
                   Waterville, is the town of Vassalboro. Travel on route 32, either northbound from South China, or
                   southbound from Winslow, and you will find the town itself, sitting right off the western end of China
                   Lake.
-                </p>
 
-                <p class="lead fs-6">
+                  <br /><br />
                   My wife (originally from Waterville) brought me here from Kansas, after she graduated from college. We
                   bought a house of the Cross Hill Road in early 2024, and have lived here ever since. While the move
                   was at first a bit of a culture shock for me, I have grown to love it here more and more every day.
-                </p>
 
-                <p class="lead fs-6">
+                  <br /><br />
                   Here you will find photos I've taken of both Vassalboro, and the rest of Maine, along with historical
                   photos of Vassalboro that connect with me the most.
-                </p>
 
-                <p class="lead fs-6">
+                  <br /><br />
                   Hover over or tap on each photo to get its description, location and date taken.
-                </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="row mb-3">
           <div class="col-md-4 col-lg-4 mt-3">
-            <div class="card shadow">
-              <svg
-                aria-label="Placeholder: Image cap"
-                class="bd-placeholder-img card-img-top"
-                height="180"
-                preserveAspectRatio="xMidYMid slice"
-                role="img"
-                width="100%"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#868e96"></rect>
-                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-              </svg>
+            <div class="card shadow h-100">
+              <div class="position-relative">
+                <img class="card-img-top" src="../assets/20241208_113449.jpg" />
+                <div class="img-overlay"></div>
+              </div>
               <div class="card-body">
                 <a href="./pages/vassalboro-today.html">
                   <h5 class="card-title">Vassalboro Today</h5>
                 </a>
-                <p class="card-tex text-body-secondary">My pictures of Vassalboro</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-lg-4 mt-3">
-            <div class="card shadow">
-              <svg
-                aria-label="Placeholder: Image cap"
-                class="bd-placeholder-img card-img-top"
-                height="180"
-                preserveAspectRatio="xMidYMid slice"
-                role="img"
-                width="100%"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#868e96"></rect>
-                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-              </svg>
-              <div class="card-body">
-                <a href="./pages/vassalboro-yesterday.html">
-                  <h5 class="card-title">Vassalboro Yesterday</h5>
-                </a>
-                <p class="card-tex text-body-secondary">Historical photos of Vassalboro</p>
+                <p class="card-text text-body-secondary">My pictures of Vassalboro</p>
               </div>
             </div>
           </div>
 
           <div class="col-md-4 col-lg-4 mt-3">
             <div class="card shadow h-100">
-              <svg
-                aria-label="Placeholder: Image cap"
-                class="bd-placeholder-img card-img-top"
-                height="180"
-                preserveAspectRatio="xMidYMid slice"
-                role="img"
-                width="100%"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#868e96"></rect>
-                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-              </svg>
+              <div class="position-relative">
+                <div class="card-img-top bg-secondary d-flex justify-content-center align-items-center">
+                  Coming soon
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Vassalboro Yesterday</h5>
+                <p class="card-text text-body-secondary">Historical photos of Vassalboro</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-4 mt-3">
+            <div class="card shadow h-100">
+              <div class="position-relative">
+                <img class="card-img-top" src="./assets/20240714_174943.jpg" />
+                <div class="img-overlay"></div>
+              </div>
               <div class="card-body">
                 <a href="./pages/all-of-maine.html">
                   <h5 class="card-title">All of Maine</h5>
