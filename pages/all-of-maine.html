@@ -19,6 +19,23 @@
       rel="stylesheet"
     />
 
+    <style>
+      .card {
+        border: 0;
+      }
+
+      .card-img-overlay {
+        opacity: 0;
+        background: rgba(0, 0, 0, 0);
+      }
+
+      div.card:hover > .card-img-overlay {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.5);
+        transition: opacity 0.3s ease;
+      }
+    </style>
+
     <title>All of Maine</title>
   </head>
 
@@ -27,12 +44,73 @@
       <h6>by Neil</h6>
     </header>
     <div class="container">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-          <li class="breadcrumb-item active">All of Maine</li>
-        </ol>
-      </nav>
+      <div class="card shadow-sm mb-2">
+        <div class="card-body pb-0">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+              <li class="breadcrumb-item active">All of Maine</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <div class="card text-bg-dark mb-2">
+            <img class="img-fluid rounded" src="../assets/20241002_130835.jpg" />
+            <div class="card-img-overlay">
+              <p class="card-text">Reid State Park.</p>
+              <p class="card-text">September 2024</p>
+            </div>
+          </div>
+          <div class="card text-bg-dark">
+            <img class="img-fluid shadow-1-strong rounded" src="../assets/20240929_150502.jpg" />
+            <div class="overlay"></div>
+            <div class="card-img-overlay">
+              <p class="card-text">Labrador Pond. Sumner, ME.</p>
+              <p class="card-text">Fall 2024</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="card text-bg-dark mb-2">
+            <img class="img-fluid shadow-1-strong rounded" src="../assets/20220706_141751.jpg" />
+            <div class="overlay"></div>
+            <div class="card-img-overlay">
+              <p class="card-text">S'huckins Lobstah. One of my favorite places to eat. Baileyville, ME.</p>
+              <p class="card-text">July 2022</p>
+            </div>
+          </div>
+          <div class="card text-bg-dark">
+            <img class="img-fluid shadow-1-strong rounded" src="../assets/20260301_095959.jpg" />
+            <div class="overlay"></div>
+            <div class="card-img-overlay">
+              <p class="card-text">Portland Head Light in Cape Elizabeth, ME.</p>
+              <p class="card-text">March 2026</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="card text-bg-dark mb-2">
+            <img class="img-fluid shadow-1-strong rounded" src="../assets/20251018_125855.jpg" />
+            <div class="overlay"></div>
+            <div class="card-img-overlay">
+              <p class="card-text">China Lake, off my in-laws' camp.</p>
+              <p class="card-text">October 2025</p>
+            </div>
+          </div>
+          <div class="card text-bg-dark mb-2">
+            <img class="img-fluid shadow-1-strong rounded" src="../assets/20220706_100014.jpg" />
+            <div class="overlay"></div>
+            <div class="card-img-overlay">
+              <p class="card-text">Stephen King's former house. Bangor, ME.</p>
+              <p class="card-text">July 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
