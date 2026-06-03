@@ -1,0 +1,40 @@
+body {
+  font-family: "Open Sans";
+}
+
+.card {
+  border: 0;
+}
+
+.card-img-overlay {
+  opacity: 0;
+  background: rgba(0, 0, 0, 0);
+  transition:
+    opacity 0.3s ease,
+    background 0.3s ease;
+}
+
+.card-text-bottom {
+  font-size: 0.775rem;
+}
+
+div.card:hover > .card-img-overlay {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease;
+}
+
+.card-img-overlay p,
+.card-text-bottom {
+  opacity: 0;
+  transform: translateY(4px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+div.card:hover > .card-img-overlay p,
+div.card:hover > .card-img-overlay .card-text-bottom {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -19,29 +19,9 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../css/main.css" />
 
     <title>Vassalboro Today</title>
-
-    <style>
-      body {
-        font-family: "Open Sans";
-      }
-
-      .card {
-        border: 0;
-      }
-
-      .card-img-overlay {
-        opacity: 0;
-        background: rgba(0, 0, 0, 0);
-      }
-
-      div.card:hover > .card-img-overlay {
-        opacity: 1;
-        background: rgba(0, 0, 0, 0.5);
-        transition: opacity 0.3s ease;
-      }
-    </style>
   </head>
 
   <body>
@@ -58,30 +38,35 @@
                 <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
                 <li class="breadcrumb-item active">Vassalboro Today</li>
               </ol>
+              <div class="alert alert-primary mb-2" role="alert">
+                <i class="bi bi-info-circle"></i> More photos will be added as I sort through them!
+              </div>
             </nav>
           </div>
         </div>
       </div>
     </header>
     <div class="container">
-      <div class="alert alert-primary mb-2" role="alert">
-        <i class="bi bi-info-circle"></i> More photos will be added as I sort through them!
-      </div>
-      <div class="row">
+      <div class="row mb-3">
         <div class="col-lg-4 col-md-12 mb-2 mb-lg-0 pe-lg-0">
           <div class="card text-bg-dark mb-2">
             <img class="img-fluid rounded" src="../assets/20250409_091201.jpg" />
-            <div class="card-img-overlay">
+            <div class="card-img-overlay d-flex flex-column justify-content-between">
               <p class="card-text">Webber Pond on the last day of plowable snow we got that year.</p>
-              <p class="card-text">April 2025</p>
+              <div class="d-flex justify-content-between card-text-bottom">
+                <div class="text-light card-text">April 2025</div>
+              </div>
             </div>
           </div>
           <div class="card text-bg-dark">
             <img class="img-fluid shadow-1-strong rounded" src="../assets/20241009_172955.jpg" />
             <div class="overlay"></div>
-            <div class="card-img-overlay">
+            <div class="card-img-overlay d-flex flex-column justify-content-between">
               <p class="card-text">Webber Pond. Right off the boat ramp on Dam Road.</p>
-              <p class="card-text">October 2024</p>
+
+              <div class="d-flex justify-content-between card-text-bottom">
+                <div class="text-light card-text">October 2024</div>
+              </div>
             </div>
           </div>
         </div>
@@ -89,18 +74,25 @@
           <div class="card text-bg-dark mb-2">
             <img class="img-fluid shadow-1-strong rounded" src="../assets/20241208_113449.jpg" />
             <div class="overlay"></div>
-            <div class="card-img-overlay">
+            <div class="card-img-overlay d-flex flex-column justify-content-between">
               <p class="card-text">Cross Hill Road</p>
-              <p class="card-text">January 2026</p>
+              <div class="d-flex justify-content-between card-text-bottom">
+                <div class="text-light card-text">Janurary 2026</div>
+              </div>
             </div>
           </div>
           <div class="card text-bg-dark">
             <img class="img-fluid shadow-1-strong rounded" src="../assets/20251014_142201.jpg" />
-            <div class="overlay"></div>
-            <div class="card-img-overlay">
-              <p class="card-text">American Bapist Churches of Maine building off Crowell Hill and Cross Hill Road.</p>
-              <p class="card-text">Formerly Center Vassalboro Baptist Church.</p>
-              <p class="card-text">October 2025</p>
+            <div class="card-img-overlay d-flex flex-column justify-content-between">
+              <p class="card-text">
+                American Bapist Churches of Maine building, off Crowell Hill and Cross Hill Road.
+
+                <br /><br />
+                Formerly Center Vassalboro Baptist Church
+              </p>
+              <div class="d-flex justify-content-between card-text-bottom">
+                <div class="text-light card-text">October 2025</div>
+              </div>
             </div>
           </div>
         </div>
