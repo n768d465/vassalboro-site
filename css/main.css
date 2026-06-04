@@ -1,8 +1,29 @@
+html {
+  /* scrollbar-gutter: stable; */
+  /* overflow-y: hidden; */
+}
+
 body {
   font-family: "Open Sans";
 }
 
-.card {
+photo-card {
+  display: block;
+}
+
+.photo-grid-scroll {
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.photo-card-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+photo-card > .card,
+.row > .col-lg-4 > .card {
   border: 0;
 }
 

@@ -22,193 +22,109 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="../css/main.css" />
 
+    <script src="../custom-elements/photo-card.js"></script>
     <title>All of Maine</title>
   </head>
 
-  <body>
+  <body class="d-flex flex-column vh-100 overflow-hidden">
     <header class="sticky-top">
       <div class="bg-secondary-subtle">
         <div class="p-2 mb-3 bg-dark text-white">by Neil</div>
       </div>
-      <div class="container">
-        <div class="card shadow-sm mb-2">
-          <div class="card-body pb-0">
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-                <li class="breadcrumb-item active">All of Maine</li>
-              </ol>
-            </nav>
+    </header>
+
+    <div class="container flex-grow-1 d-flex flex-column overflow-hidden">
+      <div class="row flex-shrink-0">
+        <div class="col">
+          <div class="card shadow mb-2">
+            <div class="card-body pb-0">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                  <li class="breadcrumb-item active">All of Maine</li>
+                </ol>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
-    </header>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-12 mb-2 mb-lg-0 pe-lg-0">
-          <div class="card text-bg-dark mb-2">
-            <img class="img-fluid rounded" src="../assets/20241002_130835.jpg" />
-            <div class="card-img-overlay d-flex justify-content-between flex-column">
-              <p class="card-text">Reid State Park.</p>
-              <div class="d-flex justify-content-between card-text-bottom">
-                <div>
-                  <i class="bi bi-geo-alt"></i>
-                  Georgetown, ME
-                </div>
-                <div class="text-light card-text">September 2024</div>
-              </div>
-            </div>
-          </div>
-          <div class="card text-bg-dark mb-2">
-            <img class="img-fluid" src="../assets/20240929_150502.jpg" />
-            <div class="card-img-overlay d-flex justify-content-between flex-column">
-              <p class="card-text">Labrador Pond, off Labrador Pond Road.</p>
-              <div class="d-flex justify-content-between card-text-bottom">
-                <div>
-                  <i class="bi bi-geo-alt"></i>
-                  Sumner, ME
-                </div>
-                <div class="text-light card-text">July 2024</div>
-              </div>
-            </div>
-          </div>
-          <div class="card text-bg-dark mb-2">
-            <img class="img-fluid shadow-1-strong rounded" src="../assets/20240714_174943.jpg" />
-            <div class="card-img-overlay d-flex justify-content-between flex-column">
-              <p class="card-text">
-                West Quoddy Head Lighthouse. Considered the eastermost point of the contiguous USA.
-              </p>
-              <div class="d-flex justify-content-between card-text-bottom">
-                <div>
-                  <i class="bi bi-geo-alt"></i>
-                  Lubec, ME
-                </div>
-                <div class="text-light card-text">September 2024</div>
-              </div>
-            </div>
-          </div>
-          <div class="card text-bg-dark">
-            <img class="img-fluid shadow-1-strong rounded" src="../assets/20260603_122316.jpg" />
-            <div class="card-img-overlay d-flex justify-content-between flex-column">
-              <p class="card-text">
-                Majek Seafood and Grill. My wife believes this is the best lobster you can buy inland.
-              </p>
-              <div class="d-flex justify-content-between card-text-bottom">
-                <div>
-                  <i class="bi bi-geo-alt"></i>
-                  China, ME
-                </div>
-                <div class="text-light card-text">June 2026</div>
-              </div>
-            </div>
-          </div>
+      <div class="row photo-grid-scroll flex-grow-1 overflow-auto">
+        <div class="col-lg-4 col-md-12">
+          <photo-card
+            src="../assets/20241002_130835.jpg"
+            description="Reid State Park."
+            location="Georgetown, ME"
+            date="September 2024"
+          ></photo-card>
+          <photo-card
+            src="../assets/20240929_150502.jpg"
+            description="Labrador Pond, off Labrador Pond Road."
+            location="Sumner, ME"
+            date="September 2024"
+          ></photo-card>
+          <photo-card
+            src="../assets/20240714_174943.jpg"
+            description="West Quoddy Head Lighthouse. Considered the eastermost point of the contiguous USA."
+            location="Lubec, ME"
+            date="July 2024"
+          ></photo-card>
+          <photo-card
+            src="../assets/20230809_152227.jpg"
+            description="
+              One of the peaks hiking in Camden Hills State Park.
+              <br><br>
+              Overlooking Penobscot Bay.
+            "
+            location="Lincolnville, ME"
+            date="August 2023"
+          ></photo-card>
         </div>
-        <div class="col-lg-4 mb-0 pe-lg-0">
-          <div class="card text-bg-dark mb-2">
-            <img class="img-fluid shadow-1-strong rounded" src="../assets/20220706_141751.jpg" />
-            <div class="card-img-overlay d-flex justify-content-between flex-column">
-              <p class="card-text">S'huckins Lobstah. One of my favorite places to eat. Baileyville, ME.</p>
-              <div class="d-flex justify-content-between card-text-bottom">
-                <div>
-                  <i class="bi bi-geo-alt"></i>
-                  Baileyville, ME
-                </div>
-                <div class="text-light card-text">July 2022</div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-2 text-bg-dark">
-            <img class="img-fluid shadow-1-strong rounded" src="../assets/20260301_095959.jpg" />
-            <div class="card-img-overlay d-flex justify-content-between flex-column">
-              <p class="card-text">Portland Head Light during a snowy, windy day.</p>
-              <div class="d-flex justify-content-between card-text-bottom">
-                <div>
-                  <i class="bi bi-geo-alt"></i>
-                  Cape Elizabeth, ME
-                </div>
-                <div class="text-light card-text">March 2026</div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-2 text-bg-dark">
-            <img class="img-fluid shadow-1-strong rounded" src="../assets/20230805_193205.jpg" />
-            <div class="card-img-overlay d-flex justify-content-between flex-column">
-              <p class="card-text">
+        <div class="col-lg-4 col-md-12">
+          <photo-card
+            src="../assets/20220706_141751.jpg"
+            description="S'huckins Lobstah. One of my favorite places to eat."
+            location="Baileyille, ME"
+            date="July 2022"
+          ></photo-card>
+          <photo-card
+            src="../assets/20260301_095959.jpg"
+            description="Portland Head Light during a snowy, windy day."
+            location="Cape Elizabeth, ME"
+            date="March 2026"
+          ></photo-card>
+          <photo-card
+            src="../assets/20230805_193205.jpg"
+            description="
                 Yes, these are all names of towns in Maine. Right off the intersection of Crooked River Causeway and
-                Valley Road.
-              </p>
-              <div class="d-flex justify-content-between card-text-bottom">
-                <div>
-                  <i class="bi bi-geo-alt"></i>
-                  Bethel, ME
-                </div>
-                <div class="text-light card-text">August 2023</div>
-              </div>
-            </div>
-          </div>
+                Valley Road."
+            location="Bethel, ME"
+            date="August 2023"
+          ></photo-card>
         </div>
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <div class="card text-bg-dark mb-2">
-            <img class="img-fluid shadow-1-strong rounded" src="../assets/20251018_125855.jpg" />
-            <div class="card-img-overlay d-flex justify-content-between flex-column">
-              <p class="card-text">China Lake, off my in-laws' camp.</p>
-              <div class="d-flex justify-content-between card-text-bottom">
-                <div>
-                  <i class="bi bi-geo-alt"></i>
-                  China, ME
-                </div>
-                <div class="text-light card-text">October 2025</div>
-              </div>
-            </div>
-          </div>
-          <div class="card text-bg-dark mb-2">
-            <img class="img-fluid shadow-1-strong rounded" src="../assets/20220706_100014.jpg" />
-            <div class="card-img-overlay d-flex justify-content-between flex-column">
-              <p class="card-text">
+        <div class="col-lg-4 col-md-12">
+          <photo-card
+            src="../assets/20251018_125855.jpg"
+            description="China Lake, off my inlaws camp."
+            location="China, ME"
+            date="October 2025"
+          ></photo-card>
+          <photo-card
+            src="../assets/20220706_100014.jpg"
+            description="
                 Stephen King's former house off Broadway Avenue. The house now acts a musuem dedicated to his work.
                 <br /><br />
                 Unfortunately, you cannot tour the inside. You can only view the house from the outside.
-              </p>
-              <div class="d-flex justify-content-between card-text-bottom">
-                <div>
-                  <i class="bi bi-geo-alt"></i>
-                  Bangor, ME
-                </div>
-                <div class="text-light card-text">July 2022</div>
-              </div>
-            </div>
-          </div>
-          <div class="card text-bg-dark mb-2">
-            <img class="img-fluid shadow-1-strong rounded" src="../assets/20220706_123554~2[1].jpg" />
-            <div class="card-img-overlay d-flex justify-content-between flex-column">
-              <p class="card-text">Crawford Lake, off my wife's grandmother's camp.</p>
-              <div class="d-flex justify-content-between card-text-bottom">
-                <div>
-                  <i class="bi bi-geo-alt"></i>
-                  Crawford, ME
-                </div>
-                <div class="text-light card-text">July 2022</div>
-              </div>
-            </div>
-          </div>
-          <div class="card text-bg-dark mb-2">
-            <img class="img-fluid shadow-1-strong rounded" src="../assets/20230809_152227.jpg" />
-            <div class="card-img-overlay d-flex justify-content-between flex-column">
-              <p class="card-text">
-                One of the peaks hiking in Camden Hills State Park
-
-                <br /><br />
-                Overlooking Penobscot Bay.
-              </p>
-              <div class="d-flex justify-content-between card-text-bottom">
-                <div>
-                  <i class="bi bi-geo-alt"></i>
-                  Lincolnville, ME
-                </div>
-                <div class="text-light card-text">August 2023</div>
-              </div>
-            </div>
-          </div>
+            "
+            location="Bangor, ME"
+            date="July 2022"
+          ></photo-card>
+          <photo-card
+            src="../assets/20220706_123554~2[1].jpg"
+            description="Crawford Lake, off my wife's grandmother's camp."
+            location="Crawford, ME"
+            date="July 2022"
+          >
+          </photo-card>
         </div>
       </div>
     </div>
