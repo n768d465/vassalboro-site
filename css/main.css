@@ -1,11 +1,10 @@
-body {
+html {
   scrollbar-gutter: stable;
   /* overflow-y: hidden; */
 }
 
 body {
   font-family: "Open Sans";
-  min-height: 100dvh;
 }
 
 photo-card {
