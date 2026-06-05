@@ -12,7 +12,7 @@ class PhotoCard extends HTMLElement {
       bottomLeft = `
       <div>
         <i class="bi bi-camera"></i>
-        <a href="${creditUrl}">${credit}</a>
+        <a class="text-info" href="${creditUrl}">${credit}</a>
       </div>`;
     } else if (location) {
       bottomLeft = `
