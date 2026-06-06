@@ -28,8 +28,14 @@
 
   <body class="d-flex flex-column">
     <header class="sticky-top">
-      <div class="bg-secondary-subtle">
-        <div class="p-2 mb-3 bg-dark text-white">by Neil</div>
+      <div class="d-flex justify-content-between align-items-center mb-3 p-2 bg-dark text-white">
+        <span class="banner-author">by Neil</span>
+
+        <div class="d-flex gap-2">
+          <button id="themeToggle" type="button" class="btn btn-outline-light btn-sm" title="Toggle theme">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+        </div>
       </div>
 
       <div class="container">
@@ -131,5 +137,6 @@
         </div>
       </div>
     </div>
+    <script src="../custom-elements/theme-toggle.js"></script>
   </body>
 </html>
