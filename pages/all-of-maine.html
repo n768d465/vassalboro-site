@@ -23,6 +23,15 @@
     <link rel="stylesheet" href="../css/main.css" />
 
     <script src="../custom-elements/photo-card.js"></script>
+    <script>
+      (function () {
+        const storedTheme = localStorage.getItem("theme");
+        const preferredTheme =
+          storedTheme || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-bs-theme", preferredTheme);
+      })();
+    </script>
+
     <title>All of Maine</title>
   </head>
 
@@ -32,7 +41,7 @@
         <span class="banner-author">by Neil</span>
 
         <div class="d-flex gap-2">
-          <button id="themeToggle" type="button" class="btn btn-outline-light btn-sm" title="Toggle theme">
+          <button id="themeToggle" type="button" class="btn btn-sm btn-dark" title="Toggle theme">
             <i class="bi bi-moon-stars"></i>
           </button>
         </div>

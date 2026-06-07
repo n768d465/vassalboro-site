@@ -48,6 +48,14 @@
         font-size: 0.7rem;
       }
     </style>
+    <script>
+      (function () {
+        const storedTheme = localStorage.getItem("theme");
+        const preferredTheme =
+          storedTheme || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-bs-theme", preferredTheme);
+      })();
+    </script>
 
     <title>Vassalboro, Maine</title>
   </head>
@@ -58,7 +66,7 @@
         <span class="banner-author">by Neil</span>
 
         <div class="d-flex gap-2">
-          <button id="themeToggle" type="button" class="btn btn-outline-light btn-sm" title="Toggle theme">
+          <button id="themeToggle" type="button" class="btn btn-sm btn-dark" title="Toggle theme">
             <i class="bi bi-moon-stars"></i>
           </button>
 
@@ -170,7 +178,7 @@
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Thank you for visiting!</h5>
+            <h5 class="modal-title">About</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -181,7 +189,7 @@
 
             <br /><br />
 
-            I will add more photos here over time. Thank you again for visiting.
+            I will add more photos here over time. Thank you for visiting.
 
             <br /><br />- Neil
           </div>
