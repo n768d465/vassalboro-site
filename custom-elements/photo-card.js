@@ -23,7 +23,7 @@ class PhotoCard extends HTMLElement {
       <img class="img-fluid rounded" src="${src}" />
       <div class="card-img-overlay d-flex flex-column justify-content-between">
         <p class="card-text">${description}</p>
-        <div class=card-text-bottom>
+        <div class="card-text-bottom d-flex justify-content-between">
           ${credit ? creditHTML : ""}
           ${location ? locationHTML : ""}
           ${date}
