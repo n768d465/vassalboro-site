@@ -33,6 +33,10 @@ photo-card > .card,
   transition:
     opacity 0.3s ease,
     background 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
 }
 
 .card-text-bottom {
