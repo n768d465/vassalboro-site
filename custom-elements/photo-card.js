@@ -7,41 +7,32 @@ class PhotoCard extends HTMLElement {
     const location = this.getAttribute("location");
     const src = this.getAttribute("src");
 
-    let bottomLeft = "";
-    if (credit) {
-      bottomLeft = `
+    const creditHTML = `
       <div>
         <i class="bi bi-camera"></i>
         <a class="text-info" href="${creditUrl}">${credit}</a>
       </div>`;
-    } else if (location) {
-      bottomLeft = `
+
+    const locationHTML = `
       <div>
         <i class="bi bi-geo-alt me-1"></i>${location}
       </div>`;
-    }
 
-    const bottomRow = bottomLeft
-      ? `<div class="d-flex justify-content-between card-text-bottom">
-        ${bottomLeft}
-        <div class="card-text">
-          ${date}
-        </div>
-       </div>`
-      : `<div class="card-text-bottom">
-        ${date}
-       </div>`;
-
-    this.innerHTML = `
+    const innerHTML = `
     <div class="card text-bg-dark mb-2">
       <img class="img-fluid rounded" src="${src}" />
       <div class="card-img-overlay d-flex flex-column justify-content-between">
         <p class="card-text">${description}</p>
-        ${bottomRow}
+        <div class=card-text-bottom>
+          ${credit ? creditHTML : ""}
+          ${location ? locationHTML : ""}
+          ${date}
+        </div>
       </div>
-    </div>
-  `;
+    </div>`;
+
+    this.innerHTML = innerHTML;
   }
 }
 
-customElements.define('photo-card', PhotoCard);
+customElements.define("photo-card", PhotoCard);
