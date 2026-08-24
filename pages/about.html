@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +18,9 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="../css/main.css" />
+
     <script src="../custom-elements/photo-card.js"></script>
     <script>
       (function () {
@@ -30,7 +31,7 @@
       })();
     </script>
 
-    <title>Vassalboro Today</title>
+    <title>About</title>
   </head>
 
   <body class="d-flex flex-column">
@@ -62,7 +63,7 @@
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb mb-0">
                 <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-                <li class="breadcrumb-item active">Vassalboro Today</li>
+                <li class="breadcrumb-item active">About</li>
               </ol>
             </nav>
           </div>
@@ -70,58 +71,22 @@
       </div>
     </header>
 
-    <div class="container flex-grow-1 d-flex flex-column">
-      <div class="row flex-shrink-0">
-        <div class="col"></div>
-      </div>
-      <div class="row photo-grid-scroll flex-grow-1">
-        <div class="col-lg-4 col-md-12">
-          <photo-card
-            src="../assets/20260603_130507.jpg"
-            description="Vassalboro, right of Main St/Route 32.<br /><br />The yellow building on the left used to the the Country Store, but is now closed. Its future seems to be unknown. On the right is the Revere House, which was renovated earlier this year."
-            date="June 2026"
-          ></photo-card>
-
-          <photo-card
-            src="../assets/20241009_172955.jpg"
-            description="Webber Pond. Right off the boat ramp on Dam Road."
-            date="October 2024"
-          ></photo-card>
-
-          <photo-card
-            src="../assets/20260603_124851.jpg"
-            description="RL Mercantile & Trading Post off Brann Road.<br /><br />They used to sell their own groceries, but nowadays they sell hunting goods and fishing gear. They also offer taxidermy and tannery services."
-            date="June 2026"
-          ></photo-card>
-        </div>
-        <div class="col-lg-4 col-md-12">
-          <photo-card
-            src="../assets/20260128_090554.jpg"
-            description="Cross Hill Road the morning after a snow storm. Between 10-12 inches."
-            date="Janurary 2026"
-          ></photo-card>
-
-          <photo-card
-            src="../assets/20251014_142201.jpg"
-            description="American Bapist Church of Maine building, off Crowell Hill and Cross Hill Road.<br /><br />Formerly Center Vassalboro Baptist Church"
-            date="October 2025"
-          ></photo-card>
-        </div>
-        <div class="col-lg-4 col-md-12">
-          <photo-card
-            src="../assets/20260603_130347.jpg"
-            description="The Vassalboro Historical Society."
-            date="June 2026"
-          ></photo-card>
-
-          <photo-card
-            src="../assets/20260603_131610.jpg"
-            description="Remnants of Renarda's Kitchen, what used to be the only sit down restaurant in Vassalboro.<br /><br />Closed November 2025. Last I heard, a new restaurant and pizza/sub shop is coming in."
-            date="June 2026"
-          ></photo-card>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card shadow">
+              <div class="card-body">
+                This website was inspired by my father, who made a website of Virgil, Kansas, where my mom is from. It
+                was made in the 90s, and is <a href="https://www.kancoll.org/graphics/virgil/">still up today!</a>
+                <br /><br />
+                I will add more photos here over time. Thank you for visiting.
+                <br /><br />- Neil
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <script src="../custom-elements/theme-toggle.js"></script>
+    </main>
   </body>
 </html>
